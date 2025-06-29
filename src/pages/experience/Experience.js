@@ -2,6 +2,9 @@ import React from "react";
 import "./Experience.css";
 import { experience } from "../../portfolio";
 
+
+// Note: You should also add logo_path in your portfolio.js as explained above
+
 function Experience() {
   return (
     <div className="main" id="experience">
@@ -15,8 +18,14 @@ function Experience() {
             {section.experiences.map((exp, idx) => (
               <div key={idx} className="experience-card">
                 <div className="experience-card-left">
-                  {/* Optional: use a placeholder if you don't have logo_path */}
-                  {/* <img src={exp.logo_path} alt={exp.company} className="experience-logo" /> */}
+                  {exp.logo_path ? (
+                    <img
+                      src={exp.logo_path}
+                      alt={exp.company}
+                      className="experience-logo"
+                      style={{ width: "100px", height: "auto" }}
+                    />
+                  ) : null}
                 </div>
                 <div className="experience-card-right">
                   <h2 className="experience-role">{exp.title}</h2>

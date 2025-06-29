@@ -1,3 +1,9 @@
+// src/portfolio.js
+import AzentioLogo from "./assets/images/Azentio.png";
+import ExpleoLogo from "./assets/images/Expleo.png";
+import ExperienceImg from "./assets/images/experience.svg";
+import NGPLogo from "./assets/images/NGP.png";
+
 /* Change this file to get your personal Portfolio */
 
 // Website related settings
@@ -24,7 +30,8 @@ const greeting = {
   nickname: "qa_automation_naren",
   subTitle:
     "Automation & Functional QA Engineer with hands-on experience in Selenium, TestNG, Playwright, API testing, and agile delivery practices. I believe in delivering quality software at speed.",
-  resumeLink: "https://drive.google.com/file/d/1lAME-2-2FHq5aOBMpVlLJQ0xOLuD01Jq/view?usp=drive_link",
+  resumeLink:
+    "https://drive.google.com/file/d/1lAME-2-2FHq5aOBMpVlLJQ0xOLuD01Jq/view?usp=drive_link",
   portfolio_repository: "https://github.com/naren-prithvi-b/masterPortfolio",
   githubProfile: "https://github.com/naren-prithvi-b",
 };
@@ -39,7 +46,7 @@ const socialMediaLinks = [
   },
   {
     name: "LinkedIn",
-    link: "https://linkedin.com/in/YOUR-LINKEDIN-ID",
+    link: "https://www.linkedin.com/in/naren-prithvi/",
     fontAwesomeIcon: "fa-linkedin-in",
     backgroundColor: "#0077B5",
   },
@@ -162,6 +169,7 @@ const degrees = {
         "⚡ Completed certifications on Deep Learning, Data Science, and Full Stack Development.",
       ],
       website_link: "https://www.drngpit.ac.in/",
+      logo_path: NGPLogo, // Added logo here
     },
   ],
 };
@@ -186,22 +194,12 @@ const experience = {
   subtitle: "Work and Professional Experience",
   description:
     "Experienced QA Tester working in BFSI domain with expertise in automation frameworks, API testing and Agile delivery.",
-  header_image_path: "experience.svg",
+  header_image_path: ExperienceImg,
   sections: [
     {
       title: "Work",
       work: true,
       experiences: [
-        {
-          title: "Test Engineer",
-          company: "Expleo Solutions Limited",
-          company_url: "https://expleogroup.com",
-          duration: "Mar 2023 - May 2025",
-          location: "Riyadh, Saudi Arabia",
-          description:
-            "Functional & Automation testing in BFSI domain using Selenium, TestNG, Java, and Cucumber. Finacle upgrade and Oracle CRM CX projects.",
-          color: "#0078D4",
-        },
         {
           title: "Quality Assurance Engineer",
           company: "Azentio Software",
@@ -211,6 +209,18 @@ const experience = {
           description:
             "Working on enterprise banking QA automation, test design, API validation using Postman, and Agile delivery.",
           color: "#FF6F00",
+          logo_path: AzentioLogo, // Added logo here
+        },
+        {
+          title: "Test Engineer",
+          company: "Expleo Solutions Limited",
+          company_url: "https://expleogroup.com",
+          duration: "Mar 2023 - May 2025",
+          location: "Riyadh, Saudi Arabia",
+          description:
+            "Functional & Automation testing in BFSI domain using Selenium, TestNG, Java, and Cucumber. Finacle upgrade and Oracle CRM CX projects.",
+          color: "#0078D4",
+          logo_path: ExpleoLogo, // Added logo here
         },
       ],
     },
@@ -276,7 +286,7 @@ const contactPageData = {
       },
       {
         name: "LinkedIn",
-        link: "https://www.linkedin.com/in/naren-prithvi-b-18057617b/",
+        link: "https://www.linkedin.com/in/naren-prithvi-b-18057617b-18057617b/",
         fontAwesomeIcon: "fa-linkedin-in",
         backgroundColor: "#0077B5",
       },

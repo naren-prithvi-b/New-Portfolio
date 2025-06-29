@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom";  // <-- change here
 import { BaseProvider, LightTheme } from "baseui";
 import { Provider as StyletronProvider } from "styletron-react";
 import { Client as Styletron } from "styletron-engine-atomic";
@@ -11,14 +11,13 @@ import "./assets/font-awesome/css/all.css";
 
 const engine = new Styletron();
 
-ReactDOM.render(
+ReactDOM.render(    // <-- change here
   <StyletronProvider value={engine}>
     <BaseProvider theme={LightTheme}>
       <App />
     </BaseProvider>
   </StyletronProvider>,
-  document.getElementById("root")
+  document.getElementById("root")   // <-- pass root DOM element here
 );
 
-// Optional: unregister service worker
 serviceWorker.unregister();
