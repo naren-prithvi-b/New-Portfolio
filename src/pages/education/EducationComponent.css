@@ -1,64 +1,95 @@
-/* Make sure all box sizing includes padding and border */
+/* Box sizing */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-/* Update margins for .basic-education */
 .basic-education {
   margin: 0 5%;
   padding-bottom: 40px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+  text-align: center; /* Center everything inside */
 }
 
-/* Adjust heading container for small screens */
-.heading-div {
+/* Heading container - center aligned, stacked */
+.education-heading-div {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column; /* stack vertically */
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 10px;
+  margin-top: 20px;
 }
 
-/* Limit heading image size */
-.heading-img-div > * {
-  max-width: 150px;
+/* Education icon styling */
+.education-heading-img-div {
+  max-width: 120px;
+  width: 100%;
+}
+
+.education-heading-img {
   width: 100%;
   height: auto;
+  object-fit: contain;
   margin: 0 auto;
 }
 
-/* Smaller heading text font on mobile */
+/* Education text styling */
+.education-heading-text-div {
+  margin: 0;
+  padding: 0;
+}
+
+.education-heading-text {
+  font-size: 2.5rem;
+  font-weight: 400;
+  font-family: "Google Sans Medium", sans-serif;
+  line-height: 1.1;
+  margin: 0;
+}
+
+/* College logo container */
+.college-logo-div {
+  text-align: center;
+  margin: 20px auto 0;
+  max-width: 150px;
+}
+
+.college-logo-img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Responsive tweaks */
 @media (max-width: 480px) {
-  .heading-text {
-    font-size: 1.8rem; /* ~29px */
-    margin-top: 10px;
+  .education-heading-img-div {
+    max-width: 80px;
   }
 
-  .heading-sub-text {
-    font-size: 1.2rem;
+  .education-heading-text {
+    font-size: 1.8rem;
   }
-}
 
-/* Center and limit width of education cards */
-.education-body-div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  margin-top: 2rem;
-  padding: 0 5px;
-}
-
-/* Make education cards full width on small screens */
-@media (max-width: 480px) {
-  .education-card {
-    width: 100% !important;
-    padding: 12px 15px;
+  .college-logo-div {
+    max-width: 100px;
+    margin-top: 15px;
   }
 }
 
-/* Optional: Make links wrap nicely */
-.education-card a {
-  word-break: break-word;
+@media (max-width: 360px) {
+  .education-heading-img-div {
+    max-width: 60px !important;
+  }
+
+  .education-heading-text {
+    font-size: 1.5rem !important;
+  }
+
+  .college-logo-div {
+    max-width: 80px !important;
+  }
 }
