@@ -207,7 +207,7 @@ const experience = {
           duration: "June 2025 - Present",
           location: "India",
           description:
-            "Working on enterprise banking QA automation, test design, API validation using Postman, and Agile delivery.",
+            "Working on Islamic banking QA automation, test design, API validation using Postman and SOAP, with automation frameworks built on Playwright and Java. Experienced in sustenance QA and delivering high-quality software through Agile methodologies",
           color: "#FF6F00",
           logo_path: AzentioLogo, // Added logo here
         },
@@ -215,10 +215,10 @@ const experience = {
           title: "Test Engineer",
           company: "Expleo Solutions Limited",
           company_url: "https://expleogroup.com",
-          duration: "Mar 2023 - May 2025",
+          duration: "March 2023 - May 2025",
           location: "Riyadh, Saudi Arabia",
           description:
-            "Functional & Automation testing in BFSI domain using Selenium, TestNG, Java, and Cucumber. Finacle upgrade and Oracle CRM CX projects.",
+            "Performed functional and automation testing in the BFSI domain using Selenium, TestNG, Java, and Cucumber. Contributed to Finacle upgrade and Oracle CRM CX projects, ensuring seamless quality delivery",
           color: "#0078D4",
           logo_path: ExpleoLogo, // Added logo here
         },
