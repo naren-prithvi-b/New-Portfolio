@@ -27,9 +27,9 @@ const seo = {
 const greeting = {
   title: "Naren Prithvi",
   logo_name: "NarenPrithvi",
-  nickname: "qa_automation_naren",
+  nickname: "debug_monk",
   subTitle:
-    "Automation & Functional QA Engineer with hands-on experience in Selenium, TestNG, Playwright, API testing, and agile delivery practices. I believe in delivering quality software at speed.",
+    "Automation-focused SDET skilled in Selenium, Playwright, TestNG, and API testing across agile environments.Committed to engineering quality software through efficient, reliable, and maintainable test automation.",
   resumeLink:
     "https://drive.google.com/file/d/1lAME-2-2FHq5aOBMpVlLJQ0xOLuD01Jq/view?usp=drive_link",
   portfolio_repository: "https://github.com/naren-prithvi-b/masterPortfolio",
@@ -201,7 +201,7 @@ const experience = {
       work: true,
       experiences: [
         {
-          title: "Quality Assurance Engineer",
+          title: "Software Development Engineer in Test",
           company: "Azentio Software",
           company_url: "https://www.azentio.com",
           duration: "June 2025 - Present",
@@ -286,7 +286,8 @@ const contactPageData = {
       },
       {
         name: "LinkedIn",
-        link: "https://www.linkedin.com/in/naren-prithvi-b-18057617b-18057617b/",
+        link:
+          "https://www.linkedin.com/in/naren-prithvi-b-18057617b-18057617b/",
         fontAwesomeIcon: "fa-linkedin-in",
         backgroundColor: "#0077B5",
       },
