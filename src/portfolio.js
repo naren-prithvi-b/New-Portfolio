@@ -165,8 +165,8 @@ const degrees = {
       subtitle: "B.E. in Computer Engineering",
       duration: "2018 - 2022",
       descriptions: [
-        "⚡ Studied core CS subjects: DS, Algorithms, DBMS, OS, AI, etc.",
-        "⚡ Completed certifications on Deep Learning, Data Science, and Full Stack Development.",
+        "⚡ Studied core CS subjects: DS, Algorithms, DBMS, OS, Cloud Computing, etc.",
+        "⚡ Completed certifications on AWS Cloud Practitioner, Python , and Full Stack Development.",
       ],
       website_link: "https://www.drngpit.ac.in/",
       logo_path: NGPLogo, // Added logo here
