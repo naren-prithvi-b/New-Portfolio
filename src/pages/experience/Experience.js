@@ -128,7 +128,10 @@ function Experience(props) {
                             className="experience-desc"
                             style={{ color: theme.text }}
                           >
-                            ⚡ {desc}
+                            <span role="img" aria-label="lightning bolt">
+                              ⚡
+                            </span>{" "}
+                            {desc}
                           </p>
                         ))
                       ) : (
@@ -164,7 +167,10 @@ function Experience(props) {
                       className="experience-desc"
                       style={{ color: theme.text }}
                     >
-                      🏆 {achievement}
+                      <span role="img" aria-label="trophy">
+                        🏆
+                      </span>{" "}
+                      {achievement}
                     </p>
                   ))}
                 </div>
