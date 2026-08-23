@@ -55,6 +55,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+/* body is a flex container (see global.js); without this the root flex item
+   shrinks to its content width instead of the full viewport, misaligning
+   the header nav on pages whose content is narrower than the home page */
+#root {
+  width: 100%;
+}
 /* Media Query */
 @media (max-width: 1380px) {
   html,

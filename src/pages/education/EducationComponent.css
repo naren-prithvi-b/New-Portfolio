@@ -11,17 +11,48 @@
   overflow-wrap: break-word;
   word-wrap: break-word;
   hyphens: auto;
-  text-align: center; /* Center everything inside */
 }
 
-/* Heading container - center aligned, stacked */
-.education-heading-div {
+/* Hero section - matches Home page greeting layout (left-aligned text + image) */
+.education-hero {
   display: flex;
-  flex-direction: column; /* stack vertically */
+  align-items: center;
+}
+
+.education-hero > * {
+  flex: 1;
+}
+
+.education-hero-text {
+  text-align: left;
+}
+
+.education-heading-text {
+  margin-top: 80px;
+  font-size: 56px;
+  line-height: 1.1;
+  font-weight: 400;
+  font-family: "Google Sans Medium", sans-serif;
+  text-align: left;
+}
+
+.education-heading-sub-text {
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 0;
+  font-family: "Google Sans Medium";
+  text-align: left;
+}
+
+.education-hero-image {
+  display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  margin-top: 20px;
+}
+
+.education-hero-image > * {
+  max-width: 100%;
+  height: auto;
 }
 
 /* Education icon styling */
@@ -37,20 +68,6 @@
   margin: 0 auto;
 }
 
-/* Education text styling */
-.education-heading-text-div {
-  margin: 0;
-  padding: 0;
-}
-
-.education-heading-text {
-  font-size: 2.5rem;
-  font-weight: 400;
-  font-family: "Google Sans Medium", sans-serif;
-  line-height: 1.1;
-  margin: 0;
-}
-
 /* College logo container */
 .college-logo-div {
   text-align: center;
@@ -64,19 +81,201 @@
   object-fit: contain;
 }
 
+/* Professional card styling */
+.education-main {
+  width: 100%;
+}
+
+/* Degrees section layout */
+.degrees-heading {
+  text-align: center;
+  font-size: 40px;
+  font-family: "Google Sans Medium", sans-serif;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.education-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.education-tab-btn {
+  padding: 10px 28px;
+  border-radius: 24px;
+  border: 2px solid;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Google Sans Medium", sans-serif;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.education-tab-btn:hover {
+  transform: translateY(-2px);
+}
+
+.education-body-div {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 0;
+  padding-bottom: 20px;
+}
+
+.degree-row {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.degree-logo-circle {
+  flex-shrink: 0;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 3px solid;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.degree-logo-img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+}
+
+.cert-tab-icon {
+  font-size: 56px;
+}
+
+.education-card {
+  flex: 1;
+  border-radius: 12px;
+  border: 1px solid;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.education-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.18);
+}
+
+.education-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 28px;
+}
+
+.education-card-header h3 {
+  font-family: "Google Sans Medium", sans-serif;
+  margin: 0 0 4px;
+  font-size: 20px;
+}
+
+.education-card-header h4 {
+  font-family: "Google Sans Regular", sans-serif;
+  font-weight: 500;
+  margin: 0;
+  opacity: 0.85;
+  font-size: 15px;
+}
+
+.degree-duration {
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.education-card-body {
+  padding: 20px 28px 24px;
+}
+
+.education-card-body p {
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+.visit-website-btn {
+  display: block;
+  margin-left: auto;
+  margin-top: 16px;
+  width: fit-content;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.visit-website-btn:hover {
+  filter: brightness(0.95);
+}
+
 /* Responsive tweaks */
-@media (max-width: 480px) {
+@media (max-width: 1380px) {
+  .education-heading-text {
+    font-size: 50px;
+  }
+  .education-heading-sub-text {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .education-hero {
+    flex-direction: column;
+  }
+
+  .education-hero-text {
+    text-align: center;
+  }
+
+  .education-heading-text {
+    font-size: 30px;
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .education-heading-sub-text {
+    font-size: 16px;
+    text-align: center;
+  }
+
   .education-heading-img-div {
     max-width: 80px;
   }
 
-  .education-heading-text {
-    font-size: 1.8rem;
+  .degrees-heading {
+    font-size: 28px;
+    margin-top: 30px;
+    margin-bottom: 24px;
   }
 
-  .college-logo-div {
-    max-width: 100px;
-    margin-top: 15px;
+  .degree-row {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .degree-logo-circle {
+    width: 100px;
+    height: 100px;
+  }
+
+  .education-card-header {
+    flex-direction: column;
+    gap: 4px;
   }
 }
 
@@ -89,7 +288,8 @@
     font-size: 1.5rem !important;
   }
 
-  .college-logo-div {
-    max-width: 80px !important;
+  .degree-logo-circle {
+    width: 80px !important;
+    height: 80px !important;
   }
 }
